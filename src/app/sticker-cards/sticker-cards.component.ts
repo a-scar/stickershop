@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sticker-cards',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sticker-cards.component.css']
 })
 export class StickerCardsComponent implements OnInit {
+  @Input() title: string;
+  @Input() price: number;
 
   constructor() { }
 
